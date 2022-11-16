@@ -1,0 +1,453 @@
+:root {
+  --main-color: #f3f3f3;
+  --second-color: #333333;
+  --back-color: #fbfbfb;
+  --title-color: #bdbdbd;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "TT Hoves";
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 0;
+  align-items: center;
+}
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-right: 134px;
+}
+.menu_links {
+  position: relative;
+  margin-left: 60px;
+}
+.nav-button {
+  display: none;
+}
+.menu_links:hover::before,
+.menu_links.active::before {
+  top: 0;
+  opacity: 1;
+}
+.menu_links:hover::after,
+.menu_links.active::after {
+  bottom: 0;
+  opacity: 1;
+}
+.menu_links::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: var(--second-color);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.menu_links::after {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: var(--second-color);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu_links a {
+  color: var(--second-color);
+}
+/* HEADER */
+
+.town {
+  padding-bottom: 120px;
+}
+.town_content {
+  /*  display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+.title {
+  font-family: "TT Hoves";
+  font-weight: 300;
+  font-size: 64px;
+  color: var(--title-color);
+}
+.town_title {
+  font-family: "TT Hoves";
+
+  font-weight: 300;
+  font-size: 64px;
+
+  color: #bdbdbd;
+}
+.town_title span {
+  font-weight: bold;
+  color: black;
+}
+.town_right {
+  position: relative;
+}
+.town_img {
+  width: 100%;
+}
+
+.btn {
+  width: 222px;
+  height: 71px;
+  background: #ffffff;
+  border: none;
+}
+.town_btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 222px;
+  height: 71px;
+  background: #ffffff;
+  border: none;
+}
+.white-slide {
+  background: #bdbdbd;
+  position: relative;
+}
+.slider-in-btn {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 24px 50px 23px 50px;
+  background: #ffffff;
+}
+.slider-in-btn img {
+  padding-left: 15px;
+}
+
+.btn-prev,
+.btn-next {
+  padding: 0;
+  border: 1px solid #f2f2f2;
+  width: 52.95px;
+  height: 53px;
+  background: none;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.btn-prev:hover,
+.btn-next:hover {
+  background: #f2f2f2;
+}
+.btn-next img {
+  transform: rotate(180deg);
+}
+
+.town_slide_btns {
+  padding-top: 73px;
+}
+.town_number {
+  padding-top: 90px;
+}
+/* town */
+
+/* about */
+.about {
+  margin: 120px 0 180px 0;
+}
+
+.about_right {
+  padding-left: 30px;
+}
+
+.about_imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_imgs_23 {
+  margin-left: 80px;
+}
+.about_img_3 {
+  padding-bottom: 30px;
+}
+
+.about_content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--back-color);
+}
+
+.about_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  width: 400px;
+  color: #000000;
+  padding-bottom: 55px;
+}
+/* about */
+
+/* FIrst */
+.aims {
+  margin: 120px 0;
+}
+.aims_title {
+  font-weight: 300;
+  font-size: 64px;
+  color: #bdbdbd;
+}
+.aims_content {
+  display: flex;
+  justify-content: space-between;
+}
+.aim_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aim_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aim_title {
+  padding-right: 30px;
+  font-family: "SF Pro Display";
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 239px;
+  color: var(--title-color);
+}
+.aim_text_left {
+  width: 279px;
+
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: var(--second-color);
+}
+
+.aim_text_right {
+  width: 420px;
+
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: var(--second-color);
+}
+
+.projects {
+  margin: 120px 0;
+}
+.project_content {
+  position: relative;
+}
+
+.projects_imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+.projects_imgs_2 {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+.projects_info {
+  position: absolute;
+  top: 135px;
+  left: 89px;
+  opacity: 0;
+  z-index: 2;
+}
+.projects_info p {
+  font-family: "TT Hoves";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #ffffff;
+}
+.projects_item:hover {
+  background: url(../img/bg.png);
+}
+.projects_item:hover .projects_info {
+  opacity: 1;
+}
+
+.projects_item .pro_img {
+  width: 100%;
+  height: 255px;
+}
+.pro_img:hover {
+  background: #333333;
+  opacity: 0.3;
+  width: 100%;
+}
+
+.button {
+  margin-top: 30px;
+  width: 222px;
+  height: 71px;
+  background: var(--second-color);
+}
+
+.project_btn {
+  position: absolute;
+  right: 0;
+}
+.projects_btn_minor {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 129px;
+  height: 24px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 391px;
+  height: 46px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f3f3f3;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.bound {
+  margin: 120px 0;
+}
+
+.bound_info {
+  position: relative;
+}
+
+.bound_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bound_info input {
+  padding-left: 14px;
+}
+.bound_info_input {
+  padding: 14px 282px 116px 21px;
+}
+
+.footer {
+  background: #2c2c2c;
+}
+.footer_content {
+  padding: 58px 0 130px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_links {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer_links a {
+  font-family: "TT Hoves";
+  font-weight: 500;
+
+  color: #ffffff;
+}
+.footer_links li {
+  padding-bottom: 25px;
+}
+
+.footer_text {
+  padding-bottom: 25px;
+  font-family: "TT Hoves";
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+}
+.bi {
+  padding-right: 19px;
+}
+
+.soicals li {
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .about_imgs_23 {
+    margin-left: 0;
+    padding-right: 30px;
+  }
+  .title {
+    font-size: 58px;
+  }
+  .about_text {
+    font-size: 14px;
+  }
+  .aim_title {
+    font-size: 150px;
+  }
+  .aim_text_right,
+  .aim_text_left {
+    font-size: 20px;
+  }
+  .projects_item .pro_img {
+    height: 215px;
+  }
+  .bound_img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .about_imgs_23 {
+    margin-left: 0;
+    padding-left: 30px;
+  }
+  .title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}
